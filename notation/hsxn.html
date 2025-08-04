@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Hyperstar Math</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="HyperstarXXX">
+    <meta name="author" content="HyperstarAX">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -31,7 +31,7 @@
                                     <summary>Analysis</summary>
                                     <ul>
                                         <li><a href="analysis/hsxn-analysis.html">HSXN Analysis</a></li>
-                                    </ul>
+                                    </ol>
                                 </details>
                             </li>
                             <li><a href="hsan.html">HSAN</a></li>
@@ -48,7 +48,7 @@
         <section>
             <article>
                 <h2>Hyperstar X-Notation</h2>
-                <p>Overcomplexed and very powerful notation with an unimaginable growth speed.</p>
+                <p>Complexed and very powerful notation with an unimaginable growth speed.</p>
                 <p>Current Extensions</p>
                 <ul>
                     <li>X-Notation</li>
@@ -63,22 +63,17 @@
                     <li>Iterator - a set of elements or other iterators (denoted as [...])</li>
                     <li>Element - positive natural number</li>
                     <li>Base - first element</li>
-                    <li>Recursion - repeating of an array 'base' times.</li>
-                    <li>Iteration - repeating of elements of array 'base' times.</li>
+                    <li>Recursion - repeating of an array 'base' times. '&lt;...&gt;'</li>
+                    <li>Iteration - repeating of elements of array 'base' times. ''...'</li>
+                    <li>...(c) - repeating of elements of array 'c' times.</li>
                     <li># - a part of a set that does not transformed.</li>
-                    <li>$ -repeating of element</li>
-                    <li>&gamma; - base.</li>
                 </ul>
                 <p>All rules from previous array types is applicable to arrays of follow types, which contain iterators of previous type.</p>
-                <p>Superscript for "#" mean length of part of a set.</p>
-                <p>Superscript array for figure braces equal to the recursion of array.</p>
-                <p>Superscript array for square braces equal to the recursion of iterator (like this [[[...]]]).</p>
                 <p>Analysis of this notation you can see <a href="analysis/hsxn-analysis.html">here</a>.</p>
             </article>
             <article>
                 <h3>X-Notation</h3>
-                <p>Basic notation</p>
-                <ul class="basic-ul-none">
+                <ol>
                     <li><math>
                         <mrow>
                             <mi>X</mi>
@@ -112,100 +107,56 @@
                     </math></li>
                     <li><math>
                         <mrow>
-                            <msup>
-                                <mrow>
-                                    <mi>X</mi>
-                                    <mo fence="true" form="prefix">{</mo>
-                                    <mi>n</mi>
-                                    <mo fence="true" form="postfix">}</mo>
-                                </mrow>
-                                <mi>x</mi>
-                            </msup>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                            <msup>
-                                <mrow>
-                                    <mi>X</mi>
-                                    <mo fence="true" form="prefix">{</mo>
-                                    <mi>n+1</mi>
-                                    <mo fence="true" form="postfix">}</mo>
-                                </mrow>
-                                <mi>x-1</mi>
-                            </msup>
-                        </mrow>
-                    </math></li>
-                    <li><math>
-                        <mrow>
                             <mi>X</mi>
                             <mo fence="true" form="prefix">{</mo>
-                            <mi>#</mi>
-                            <mo>'</mo>
-                            <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
-                            <mo fence="true" form="postfix">}</mo>
-                            <mo fence="true" form="postfix">}</mo>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                            <mi>X</mi>
-                            <mo fence="true" form="prefix">{</mo>
-                            <mi>#</mi>
                             <mo>'</mo>
-                            <mi>n</mi>
+                            <mi>c</mi>
                             <mo>+</mo>
                             <mn>1</mn>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>&lt;</mi>
+                            <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
                     </math></li>
                     <li><math>
                         <mrow>
                             <mi>X</mi>
                             <mo fence="true" form="prefix">{</mo>
-                            <msup>
-                                <mi>#</mi>
-                                <mi>x</mi>
-                            </msup>
+                            <mi>#</mi>
                             <mo>'</mo>
                             <mn>1</mn>
                             <mo>'</mo>
-                            <mi>n</mi>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
                             <mo>'</mo>
                             <mi>#</mi>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                         <mo>=</mo>
                         <mrow>
-                            <msup>
-                                <mrow>
-                                    <mi>X</mi>
-                                    <mo fence="true" form="prefix">{</mo>
-                                    <msup>
-                                        <mi>#</mi>
-                                        <mi>x</mi>
-                                    </msup>
-                                    <mo>'</mo>
-                                    <mi>&gamma;</mi>
-                                    <mo>'</mo>
-                                    <mrow>
-                                        <mi>n</mi>
-                                        <mo>-</mo>
-                                        <mn>1</mn>
-                                    </mrow>
-                                    <mo>'</mo>
-                                    <mi>#</mi>
-                                    <mo fence="true" form="postfix">}</mo>
-                                </mrow>
-                                <mrow>
-                                    <msubsup>
-                                        <mi>$</mi>
-                                        <mi>x</mi>
-                                        <mi>0</mi>
-                                    </msubsup>
-                                    <mo separator="true">,</mo>
-                                    <mi>&gamma;</mi>
-                                </mrow>
-                            </msup>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>#</mi>
+                            <mo>'</mo>
+                            <mi>&lt;</mi>
+                            <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
                     <li><math>
@@ -222,11 +173,11 @@
                         <mrow>
                             <mi>X</mi>
                             <mo fence="true" form="prefix">{</mo>
-                            <msubsup>
-                                <mi>$</mi>
-                                <mi>n</mi>
-                                <mi>n</mi>
-                            </msubsup>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
@@ -236,7 +187,196 @@
                             <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
                             <mo fence="true" form="prefix">[</mo>
-                            <mi>x</mi>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo>'</mo>
+                            <mi>&lt;</mi>
+                            <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
@@ -244,64 +384,493 @@
                         <mrow>
                             <mi>X</mi>
                             <mo fence="true" form="prefix">{</mo>
-                            <msubsup>
-                                <mi>$</mi>
-                                <mi>n</mi>
-                                <mi>n</mi>
-                            </msubsup>
+                            <mi>n</mi>
                             <mo fence="true" form="prefix">[</mo>
-                            <mi>x-1</mi>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
+                <p></p>
+                <ol start="11">
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>e</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>e</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>e</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo>'</mo>
+                            <mi>&lt;</mi>
+                            <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
+                            <mo>'</mo>
+                            <mi>e</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>e</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>e</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>d</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>'</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
-                </ul>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo>'</mo>
+                            <mi>&lt;</mi>
+                            <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
+                            <mo>'</mo>
+                            <mi>c</mi>
+                            <mo>'</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
             </article>
             <article>
                 <h3>Extended X-Notation</h3>
-                <p>Iterator Notation (Iterators themselves can have sets, and they have the same rules as regular sets.)</p>
-                <ul class="basic-ul-none">
+                <ol>
                     <li><math>
                         <mrow>
                             <mi>X</mi>
                             <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
                             <mo fence="true" form="prefix">[</mo>
+                            <mo fence="true" form="prefix">[</mo>
                             <mn>1</mn>
                             <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
                             <mo>'</mo>
-                            <mn>1</mn>
-                            <mo fence="true" form="postfix">}</mo>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                            <mi>X</mi>
-                            <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
-                            <mo fence="true" form="prefix">[</mo>
-                            <mrow>
-                                <mi>X</mi>
-                                <mo fence="true" form="prefix">{</mo>
-                                <mo fence="true" form="prefix">[</mo>
-                                <mi>&ctdot;</mi>
-                                <mo fence="true" form="postfix">]</mo>
-                                <mo fence="true" form="postfix">}</mo>
-                            </mrow>
-                            <mo fence="true" form="postfix">]</mo>
-                            <mo fence="true" form="postfix">}</mo>
-                        </mrow>
-                    </math></li>
-                    <li><math>
-                        <mrow>
-                            <mi>X</mi>
-                            <mo fence="true" form="prefix">{</mo>
-                            <mi>n</mi>
-                            <mo fence="true" form="prefix">[</mo>
-                            <mn>1</mn>
-                            <mo fence="true" form="postfix">]</mo>
                             <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mo fence="true" form="prefix">[</mo>
                             <mo fence="true" form="prefix">[</mo>
                             <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
@@ -311,14 +880,14 @@
                             <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
                             <mo fence="true" form="prefix">[</mo>
-                            <mn>1</mn>
-                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
                             <mo>'</mo>
-                            <msubsup>
-                                <mi>$</mi>
-                                <mi>n</mi>
-                                <mi>n</mi>
-                            </msubsup>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
@@ -329,7 +898,11 @@
                             <mi>n</mi>
                             <mo fence="true" form="prefix">[</mo>
                             <mo fence="true" form="prefix">[</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mo fence="true" form="prefix">[</mo>
                             <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
@@ -339,56 +912,26 @@
                             <mi>X</mi>
                             <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
-                            <msubsup>
-                                <mi>$</mi>
-                                <mi>n</mi>
-                                <mrow>
-                                    <mo fence="true" form="prefix">[</mo>
-                                    <mi>n</mi>
-                                    <mo fence="true" form="postfix">]</mo>
-                                </mrow>
-                            </msubsup>
-                            <mo fence="true" form="postfix">}</mo>
-                        </mrow>
-                    </math></li>
-                    <li><math>
-                        <mrow>
-                            <mi>X</mi>
-                            <mo fence="true" form="prefix">{</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mo fence="true" form="prefix">[</mo>
                             <mi>n</mi>
-                            <mo fence="true" form="prefix">[</mo>
-                            <mn>1</mn>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
                             <mo fence="true" form="postfix">]</mo>
-                            <mo fence="true" form="prefix">[</mo>
-                            <mo fence="true" form="prefix">[</mo>
-                            <mn>1</mn>
-                            <mo fence="true" form="postfix">]</mo>
-                            <mo fence="true" form="postfix">]</mo>
-                            <mo fence="true" form="postfix">}</mo>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                            <mi>X</mi>
-                            <mo fence="true" form="prefix">{</mo>
-                            <msubsup>
-                                <mi>$</mi>
-                                <mi>n</mi>
-                                <mi>n</mi>
-                            </msubsup>
-                            <mo fence="true" form="prefix">[</mo>
-                            <mo fence="true" form="prefix">[</mo>
-                            <mn>1</mn>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
-                </ul>
+                </ol>
+                <p>And etc. Note: all rules from X-Notation applicable inside iterator.</p>
             </article>
             <article>
                 <h3>Superextended X-Notation</h3>
-                <p>Full iterators notation - iterator contain a sets with iterators.</p>
-                <ul class="basic-ul-none">
+                <ol>
                     <li><math>
                         <mrow>
                             <mi>X</mi>
@@ -446,12 +989,11 @@
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
-                </ul>
+                </ol>
             </article>
             <article>
                 <h3>Hyperextended X-Notation</h3>
-                <p>Extended iterators notation - backslash now can be indexed.</p>
-                <ul class="basic-ul-none">
+                <ol>
                     <li><math>
                         <mrow>
                             <mi>X</mi>
@@ -574,7 +1116,290 @@
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
-                </ul>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <mo>&rightarrow;</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>&ctdot;</mi>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>c</mi>
+                                    <mo>+</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>&ctdot;</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>c</mi>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>#</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mn>1</mn>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>c</mi>
+                                    <mo>+</mo>
+                                    <mn>1</mn>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>#</mi>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>#</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>&ctdot;</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>c</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>#</mi>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <msub>
+                                        <mo>&rightarrow;</mo>
+                                        <mn>2</mn>
+                                    </msub>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>n</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>n</mi>
+                                    <mo>&rightarrow;</mo>
+                                    <mi>&ctdot;</mi>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <msub>
+                                        <mo>&rightarrow;</mo>
+                                        <mrow>
+                                            <mi>c</mi>
+                                            <mo>+</mo>
+                                            <mn>1</mn>
+                                        </mrow>
+                                    </msub>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <msub>
+                                        <mo>&rightarrow;</mo>
+                                        <mi>c</mi>
+                                    </msub>
+                                    <mi>n</mi>
+                                    <msub>
+                                        <mo>&rightarrow;</mo>
+                                        <mi>c</mi>
+                                    </msub>
+                                    <mi>n</mi>
+                                    <msub>
+                                        <mo>&rightarrow;</mo>
+                                        <mi>c</mi>
+                                    </msub>
+                                    <mi>&ctdot;</mi>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <msub>
+                                        <mo>&rightarrow;</mo>
+                                        <mrow>
+                                            <mn>1</mn>
+                                            <mo>&rightarrow;</mo>
+                                            <mn>1</mn>
+                                        </mrow>
+                                    </msub>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <msub>
+                                        <mo>&rightarrow;</mo>
+                                        <mrow>
+                                            <mi>&ctdot;</mi>
+                                        </mrow>
+                                    </msub>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
             </article>
         </section>
     </main>
