@@ -71,6 +71,7 @@
                     <li># - a part of a chain that does not transformed.</li>
                 </ul>
                 <p>All rules from previous array types is applicable to arrays of follow types, which contain iterators of previous type.</p>
+                <p>Superscript for braces - count of braces.</p>
                 <p>Analysis of this notation you can see <a href="analysis/hsxn-analysis.html">here</a>.</p>
             </article>
             <article>
@@ -930,6 +931,53 @@
                     </math></li>
                 </ol>
                 <p>And etc. Note: all rules from X-Notation applicable inside iterator.</p>
+                <p>...[[1]]... = ...[1[1]]... .</p>
+                <p>Common recursive rules:</p>
+                <ol>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <msup>
+                                <mi></mi>
+                                <mi>c</mi>
+                            </msup>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">]</mo>
+                            <msup>
+                                <mi></mi>
+                                <mi>c</mi>
+                            </msup>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <msup>
+                                <mi></mi>
+                                <mi>c</mi>
+                            </msup>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>n</mi>
+                            <mo>'</mo>
+                            <mi>&ctdot;</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <msup>
+                                <mi></mi>
+                                <mi>c</mi>
+                            </msup>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
             </article>
             <article>
                 <h3>Superextended X-Notation</h3>
