@@ -211,3 +211,30 @@ li {
 .basic-ul-none li {
     margin: 6px 0 0 0;
 }
+
+ol li {
+    margin: 6px 0 0 0;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #ffffff;
+}
+
+tr {
+    border: 2px solid #ffffff;
+}
+
+th, td{
+    border: 2px solid #ffffff;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+th {
+    font-size: 18px;
+}
