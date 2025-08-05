@@ -66,11 +66,11 @@
                     <li>Chain - a set of iterators and elements</li>
                     <li>Base - first element</li>
                     <li>Recursion - repeating of an array 'base' times. '&lt;...&gt;'</li>
-                    <li>Iteration - repeating of elements of array 'base' times. '...'</li>
+                    <li>Iteration - repeating of elements of array 'base' times. ''...'</li>
                     <li>...(c) - repeating of elements of array 'c' times.</li>
                     <li># - a part of a chain that does not transformed.</li>
                 </ul>
-                <p>All rules from previous chain types is applicable to chain of follow types, which contain iterators of previous type.</p>
+                <p>All rules from previous array types is applicable to arrays of follow types, which contain iterators of previous type.</p>
                 <p>Superscript for braces - count of braces.</p>
                 <p>Analysis of this notation you can see <a href="analysis/hsxn-analysis.html">here</a>.</p>
             </article>
@@ -930,9 +930,10 @@
                         </mrow>
                     </math></li>
                 </ol>
-                <p>And etc. Note: all rules from X-Notation applicable inside iterator. Iterators is independent objects, and X-Notation extension rules 6-19 work inside other iterators. For example: X{n[[[1'1]]]} = X{n[[[n]]]}</p>
+                <p>And etc. Note: all rules from X-Notation applicable inside iterator. Iterators is undependent objects, and expansion X-Notation rules 6-19 working inside other iterators. like: X{n[[[1'1]]]} = X{n[[[n]]]}</p>
+                <p>Calculation order: from external to internal chains.</p>
                 <p>...[[1]]... = ...[1[1]]... .</p>
-                <p>Common recursive rules:</p>
+                <p>Common recursive rule:</p>
                 <ol>
                     <li><math>
                         <mrow>
@@ -981,6 +982,7 @@
             </article>
             <article>
                 <h3>Superextended X-Notation</h3>
+                <p>Note: in rule 3 of SEHSXN, ... used for a chain with repeating iterators.</p>
                 <ol>
                     <li><math>
                         <mrow>
@@ -1016,11 +1018,55 @@
                             <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
                             <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo>\</mo>
+                            <mn>1</mn>
+                            <mo>\</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo>\</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo>\</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>&lt;</mi>
+                            <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>\</mo>
+                            <mi>c</mi>
+                            <mo>\</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">}</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mi>X</mi>
+                            <mo fence="true" form="prefix">{</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="prefix">[</mo>
                             <mn>1</mn>
                             <mo>\</mo>
                             <mn>1</mn>
                             <mo>\</mo>
                             <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">)</mo>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
@@ -1031,10 +1077,21 @@
                             <mi>n</mi>
                             <mo fence="true" form="prefix">[</mo>
                             <mo fence="true" form="prefix">[</mo>
+                            <mi>&lt;</mi>
                             <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo>\</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>&lt;</mi>
+                            <mi>&ctdot;</mi>
+                            <mi>&gt;</mi>
                             <mo fence="true" form="postfix">]</mo>
                             <mo>\</mo>
                             <mi>&ctdot;</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
                             <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
@@ -1043,6 +1100,7 @@
             </article>
             <article>
                 <h3>Hyperextended X-Notation</h3>
+                <p>Note: in all rules of HEHSXN, ... used for a chain with repeating iterators.</p>
                 <ol>
                     <li><math>
                         <mrow>
@@ -1066,11 +1124,15 @@
                             <mi>n</mi>
                             <mrow>
                                 <mo fence="true" form="prefix">[</mo>
+                                <mi>&lt;</mi>
                                 <mi>&ctdot;</mi>
+                                <mi>&gt;</mi>
                                 <mo fence="true" form="postfix">]</mo>
                                 <mo>\</mo>
                                 <mo fence="true" form="prefix">[</mo>
+                                <mi>&lt;</mi>
                                 <mi>&ctdot;</mi>
+                                <mi>&gt;</mi>
                                 <mo fence="true" form="postfix">]</mo>
                                 <mo>\</mo>
                                 <mi>&ctdot;</mi>
@@ -1104,14 +1166,18 @@
                             <mi>n</mi>
                             <mrow>
                                 <mo fence="true" form="prefix">[</mo>
+                                <mi>&lt;</mi>
                                 <mi>&ctdot;</mi>
+                                <mi>&gt;</mi>
                                 <mo fence="true" form="postfix">]</mo>
                                 <msub>
                                     <mo>\</mo>
                                     <mi>s</mi>
                                 </msub>
                                 <mo fence="true" form="prefix">[</mo>
+                                <mi>&lt;</mi>
                                 <mi>&ctdot;</mi>
+                                <mi>&gt;</mi>
                                 <mo fence="true" form="postfix">]</mo>
                                 <msub>
                                     <mo>\</mo>
@@ -1146,23 +1212,16 @@
                             <mi>X</mi>
                             <mo fence="true" form="prefix">{</mo>
                             <mi>n</mi>
-                            <mrow>
-                                <mo fence="true" form="prefix">[</mo>
-                                <mi>&ctdot;</mi>
-                                <mo fence="true" form="postfix">]</mo>
-                                <msub>
-                                    <mo>\</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <msub>
+                                <mo>\</mo>
+                                <mrow>
                                     <mi>n</mi>
-                                </msub>
-                                <mo fence="true" form="prefix">[</mo>
-                                <mi>&ctdot;</mi>
-                                <mo fence="true" form="postfix">]</mo>
-                                <msub>
-                                    <mo>\</mo>
-                                    <mi>n</mi>
-                                </msub>
-                                <mi>&ctdot;</mi>
-                            </mrow>
+                                </mrow>
+                            </msub>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
                             <mo fence="true" form="postfix">}</mo>
                         </mrow>
                     </math></li>
@@ -1195,7 +1254,9 @@
                             <msub>
                                 <mo>\</mo>
                                 <mrow>
+                                    <mi>&lt;</mi>
                                     <mi>&ctdot;</mi>
+                                    <mi>&gt;</mi>
                                 </mrow>
                             </msub>
                             <mn>1</mn>
@@ -1234,7 +1295,9 @@
                             <msub>
                                 <mo>\</mo>
                                 <mrow>
+                                    <mi>&lt;</mi>
                                     <mi>&ctdot;</mi>
+                                    <mi>&gt;</mi>
                                     <mo>&rightarrow;</mo>
                                     <mi>c</mi>
                                 </mrow>
@@ -1281,7 +1344,9 @@
                                 <mrow>
                                     <mi>#</mi>
                                     <mo>&rightarrow;</mo>
+                                    <mi>&lt;</mi>
                                     <mi>&ctdot;</mi>
+                                    <mi>&gt;</mi>
                                     <mo>&rightarrow;</mo>
                                     <mi>c</mi>
                                     <mo>&rightarrow;</mo>
@@ -1438,7 +1503,9 @@
                                     <msub>
                                         <mo>&rightarrow;</mo>
                                         <mrow>
+                                            <mi>&lt;</mi>
                                             <mi>&ctdot;</mi>
+                                            <mi>&gt;</mi>
                                         </mrow>
                                     </msub>
                                     <mn>1</mn>
@@ -1459,5 +1526,3 @@
 </body>
 
 </html>
-
-
