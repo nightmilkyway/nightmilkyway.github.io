@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hyperstar Math</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="HyperstarAX">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-div">
+            <img src="images/icon.png" alt="icon.png" class="main-logo">
+            <span class="header-text">Hyperstar</span>
+        </div>
+    </header>
+    <aside class="main-aside">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="changelogs.html">Changelogs</a></li>
+                <li>
+                    <details>
+                        <summary>Notations</summary>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary>Analysis</summary>
+                                    <ul>
+                                        <li><a href="hsan-analysis.html">HSAN Analysis</a></li>
+                                        <li><a href="hsxn-analysis.html">HSXN Analysis</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a href="hsan.html">HSAN</a></li>
+                            <li><a href="hsxn.html">HSXN</a></li>
+                            <li><a href="hsxn-hard.html">Hard HSXN</a></li>
+                            <li><a href="hsyn.html">HSYN</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Numbers</summary>
+                        <ul>
+                            <li><a href="hsnl-1.html">HSNL A</a></li>
+                            <li><a href="hsnl-2.html">HSNL B</a></li>
+                            <li><a href="hsnl-3.html">HSNL C</a></li>
+                            <li><a href="hsnl-4.html">HSNL D</a></li>
+                            <li><a href="hsnl-5.html">HSNL E</a></li>
+                            <li><a href="hsnl-6.html">HSNL F</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-main">
+        <section>
+            <article>
+                <h2>Hyperstar Array Notation</h2>
+                <p>Primary array notation, similar to Bowers' Exploding Array Function (BEAF), and created with the aim of achieving the highest number with the least amount of new characters.</p>
+                <p>Current Extensions</p>
+                <ul>
+                    <li>Linear HSAN</li>
+                    <li>Multilayer HSAN</li>
+                    <li>Extended Multilayer HSAN</li>
+                    <li>Superextended Multilayer HSAN</li>
+                    <li>Hyperextended Multilayer HSAN</li>
+                    <li>Astral Multilayer HSAN</li>
+                </ul>
+            </article>
+            <article>
+                <h3>TAD</h3>
+                <ul>
+                    <li>Array - a set of elements</li>
+                    <li>Element - positive integer (linear arrays), array of previous type</li>
+                    <li>Base - first element of array</li>
+                    <li>Recursion - repeating of an array 'base' times.</li>
+                    <li>Iteration - repeating of elements of array 'base' times.</li>
+                    <li># - a part of an array that does not transformed (has forms for multilayer arrays (#x) and other extensions)</li>
+                    <li>% - a filled array that consists of all the arrays of the previous layers in quantity 'base' (like [3(2)1]=[3,3,3(1)3,3,3(1)3,3,3])</li>
+                    <li>$ -repeating of element</li>
+                </ul>
+                <p>All rules from previous array types is applicable to arrays of follow types, which contain arrays of previous type.</p>
+                <p>Superscript for braces equal to the number of braces</p>
+            </article>
+            <article>
+                <h3>Linear HSAN</h3>
+                <p>Basic arrays</p>
+                <ol>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>x</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>x</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo separator="true">,</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo separator="true">,</mo>
+                            <mi>b</mi>
+                            <mo separator="true">,</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mrow>
+                                <mo fence="true" form="prefix">[</mo>
+                                <mo>&ctdot;</mo>
+                                <mo separator="true">,</mo>
+                                <mi>b</mi>
+                                <mo separator="true">,</mo>
+                                <mi>#</mi>
+                                <mo fence="true" form="postfix">]</mo>
+                            </mrow>
+                            <mo separator="true">,</mo>
+                            <mi>b</mi>
+                            <mo separator="true">,</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo separator="true">,</mo>
+                            <mn>1</mn>
+                            <mo separator="true">,</mo>
+                            <mi>c</mi>
+                            <mo separator="true">,</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>#</mi>
+                            <mo separator="true">,</mo>
+                            <mrow>
+                                <mo fence="true" form="prefix">[</mo>
+                                <mi>#</mi>
+                                <mo separator="true">,</mo>
+                                <mo>&ctdot;</mo>
+                                <mo separator="true">,</mo>
+                                <mrow>
+                                    <mi>c</mi>
+                                    <mo>-</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mo separator="true">,</mo>
+                                <mi>#</mi>
+                                <mo fence="true" form="postfix">]</mo>
+                            </mrow>
+                            <mo separator="true">,</mo>
+                            <mrow>
+                                <mi>c</mi>
+                                <mo>-</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo separator="true">,</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
+            </article>
+            <article>
+                <h3>Multilayer HSAN</h3>
+                <p>Arrays have become multidimensional</p>
+                <ol>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo separator="true">,</mo>
+                            <mi>a</mi>
+                            <mo separator="true">,</mo>
+                            <mo>&ctdot;</mo>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>b</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>%</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mi>b</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>%</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mrow>
+                                <mi>b</mi>
+                                <mo>-</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <msubsup>
+                                <mi>$</mi>
+                                <mi>b</mi>
+                                <mn>1</mn>
+                            </msubsup>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <msubsup>
+                                <mi>$</mi>
+                                <mrow>
+                                    <mi>b</mi>
+                                    <mo>-</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mi>%</mi>
+                            </msubsup>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mi>b</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mi>%</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mrow>
+                                <mi>b</mi>
+                                <mo>-</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>c</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <msub>
+                                <mi>#</mi>
+                                <mi>c</mi>
+                            </msub>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
+            </article>
+            <article>
+                <h3>Extended Multilayer HSAN</h3>
+                <p>Arrays extended with X-dimensionals</p>
+                <ol>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mn>1</mn>
+                                <mo>\</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>%</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mi>b</mi>
+                                <mo>\</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>%</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <mo separator="true">,</mo>
+                                    <mn>1</mn>
+                                    <mo separator="true">,</mo>
+                                    <mo>&ctdot;</mo>
+                                </mrow>
+                                <mo>\</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mrow>
+                                    <mrow>
+                                        <mo fence="true" form="prefix">[</mo>
+                                        <mi>a</mi>
+                                        <mo fence="true" form="prefix">(</mo>
+                                        <mrow>
+                                            <mrow>
+                                                <mo>&ctdot;</mo>
+                                                <mo separator="true">,</mo>
+                                                <mo>&ctdot;</mo>
+                                            </mrow>
+                                            <mo>\</mo>
+                                            <mn>1</mn>
+                                        </mrow>
+                                        <mo fence="true" form="postfix">)</mo>
+                                        <mn>1</mn>
+                                        <mo fence="true" form="postfix">]</mo>
+                                    </mrow>
+                                    <mo separator="true">,</mo>
+                                    <mo>&ctdot;</mo>
+                                </mrow>
+                                <mo>\</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mrow>
+                                    <mi>#</mi>
+                                    <mo separator="true">,</mo>
+                                    <mn>1</mn>
+                                    <mo separator="true">,</mo>
+                                    <mi>b</mi>
+                                </mrow>
+                                <mo>\</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mrow>
+                                    <mi>#</mi>
+                                    <mo separator="true">,</mo>
+                                    <mrow>
+                                        <mo fence="true" form="prefix">[</mo>
+                                        <mi>a</mi>
+                                        <mo fence="true" form="prefix">(</mo>
+                                        <mrow>
+                                            <mrow>
+                                                <mi>#</mi>
+                                                <mo separator="true">,</mo>
+                                                <mo>&ctdot;</mo>
+                                                <mo separator="true">,</mo>
+                                                <mrow>
+                                                    <mi>b</mi>
+                                                    <mo>-</mo>
+                                                    <mn>1</mn>
+                                                </mrow>
+                                            </mrow>
+                                            <mo>\</mo>
+                                            <mn>1</mn>
+                                        </mrow>
+                                        <mo fence="true" form="postfix">)</mo>
+                                        <mn>1</mn>
+                                        <mo fence="true" form="postfix">]</mo>
+                                    </mrow>
+                                    <mo separator="true">,</mo>
+                                    <mrow>
+                                        <mi>b</mi>
+                                        <mo>-</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                </mrow>
+                                <mo>\</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mn>1</mn>
+                                <mo>\</mo>
+                                <mi>b</mi>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mi>%</mi>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>b</mi>
+                                    <mo>-</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mn>1</mn>
+                                <mo>\</mo>
+                                <msubsup>
+                                    <mi>$</mi>
+                                    <mi>x</mi>
+                                    <mn>1</mn>
+                                </msubsup>
+                                <mo>\</mo>
+                                <mi>b</mi>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mi>%</mi>
+                                <mo>\</mo>
+                                <msubsup>
+                                    <mi>$</mi>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>-</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mi>%</mi>
+                                </msubsup>
+                                <mo>\</mo>
+                                <mrow>
+                                    <mi>b</mi>
+                                    <mo>-</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mn>1</mn>
+                                <mo>\</mo>
+                                <msubsup>
+                                    <mi>$</mi>
+                                    <mi>x</mi>
+                                    <mn>1</mn>
+                                </msubsup>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>a</mi>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mrow>
+                                <mi>%</mi>
+                                <mo>\</mo>
+                                <msubsup>
+                                    <mi>$</mi>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>-</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                    <mi>%</mi>
+                                </msubsup>
+                            </mrow>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
+            </article>
+            <article>
+                <h3>Superextended Multilayer HSAN</h3>
+                <p>Backslash can be indexed with number</p>
+            </article>
+            <article>
+                <h3>Hyperextended Multilayer HSAN</h3>
+                <p>Backslash can be indexed with array</p>
+            </article>
+        </section>
+    </main>
+    <footer class="main-footer">
+
+    </footer>
+</body>
+
+</html>
