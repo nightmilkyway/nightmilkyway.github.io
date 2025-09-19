@@ -5,7 +5,7 @@ The recursive function for number comparing.
 
 ## Rules
 
-$`P_0 = \{0\} \cup \N`$
+$P_0 = \{0\} \cup \N$
 $P_{i+1} = \{\psi_v | v \isin P_i\} \cup \{h_v(a,b) | v, a, b \isin P_i\}$
 $\mathbb{A} = \bigcup_{i\isin\N_0}P_i$
 $n, m \isin \N$
@@ -42,3 +42,4 @@ $\forall n , \psi_0>n$
 $\alpha ? \beta \Rightarrow \psi_\alpha?\psi_\beta$
 
 $\exist \alpha \exist \beta , h_\alpha(\xi_0, \beta) = \xi_1 \land \beta \ge 2 \Rightarrow \xi_0 < \xi_1$
+
