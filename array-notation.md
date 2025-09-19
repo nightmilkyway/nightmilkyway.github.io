@@ -35,30 +35,30 @@ Superscript for braces equal to the number of braces
 
 Basic arrays
 
-\([a] = a+1\)
-\([a, b+1, \#] = [\dots, b, \#]\)
-\([\#, 1] = [\#]\)
-\([\#, 1, b+1, \#] = [\#, \dots, b, \#]\)
+$[a] = a+1$
+$[a, b+1, \#] = [\dots, b, \#]$
+$[\#, 1] = [\#]$
+$[\#, 1, b+1, \#] = [\#, \dots, b, \#]$
 
 ### Multilayer HSAN
 
 Arrays have become multidimensional
 
-\([a(1)1] = [a, a, a, \dots]\)
-\([a(b)1] = [\%]\)
-\([a(c)b+1(c)\#_c] = [\%(c)b(c)\#_c]\)
-\([\#_c(c)\$^1_{b+1}] = [\#_c(c)\$^\%_b]\)
-\([\#_c(c)1(c)b+1(c)\#_c] = [\#_c(c)\%(c)b(c)\#_c]\)
+$[a(1)1] = [a, a, a, \dots]$
+$[a(b)1] = [\%]$
+$[a(c)b+1(c)\#_c] = [\%(c)b(c)\#_c]$
+$[\#_c(c)\$^1_{b+1}] = [\#_c(c)\$^\%_b]$
+$[\#_c(c)1(c)b+1(c)\#_c] = [\#_c(c)\%(c)b(c)\#_c]$
 
 ### Extended Multilayer HSAN
 
-\([a(1 \backslash 1)1] = [\%]\)
-\([a(b \backslash 1)1] = [\%]\)
-\([a(1, 1, \dots \backslash 1)1] = [a(\dots, \dots \backslash 1)1]\)
-\([a(\#, 1, b+1, \# \backslash 1)1] = [a(\#, \dots, b, \# \backslash 1)1]\)
-\([a(1 \backslash b+1)1] = [a(\% \backslash b)1]\)
-\([a(1 \backslash \$^1_{x+1} \backslash b+1)1] = [a(\% \backslash \$^\%_{x} \backslash b)1]\)
-\([a(1 \backslash \$^1_{x+1})1] = [a(\% \backslash \$^\%_{x})1]\)
+$[a(1 \backslash 1)1] = [\%]$
+$[a(b \backslash 1)1] = [\%]$
+$[a(1, 1, \dots \backslash 1)1] = [a(\dots, \dots \backslash 1)1]$
+$[a(\#, 1, b+1, \# \backslash 1)1] = [a(\#, \dots, b, \# \backslash 1)1]$
+$[a(1 \backslash b+1)1] = [a(\% \backslash b)1]$
+$[a(1 \backslash \$^1_{x+1} \backslash b+1)1] = [a(\% \backslash \$^\%_{x} \backslash b)1]$
+$[a(1 \backslash \$^1_{x+1})1] = [a(\% \backslash \$^\%_{x})1]$
 
 ### Superextended Multilayer HSAN
 Backslash can be indexed with number
