@@ -22,7 +22,6 @@ $\lambda_\xi(n)=\lambda_{\xi[n]}(n)$
 
 $h_{0}(\alpha, \beta)=\alpha+\beta$
 $h_{\xi+1}(\alpha, \beta)=h^{0,\beta}_\xi(\alpha, 1)$
-$h_{\xi}(\alpha, \beta)=h_{\xi[\beta]}(\alpha, \beta)$
 $\gamma_\xi(\alpha)=h_{\xi}(\alpha, \alpha)$
 
 ### Fundamental Sequences
@@ -35,11 +34,10 @@ $\psi_{\alpha+1}[\varphi+1]=\gamma_{\psi_{\alpha+1}[\varphi]}(\psi_{\alpha})$
 $\psi_{\alpha}[\varphi]=\psi_{\alpha[\varphi]}$
 $h^{0,\beta}_\xi(\alpha, \delta)[\varphi]=h^{0,\beta[\varphi]}_\xi(\alpha, \delta)$
 $h_{\xi}(\alpha, \beta)[\varphi]=h_{\xi[\varphi]}(\alpha, \beta)$
+$h_{\xi+1}(\alpha, \beta)[\varphi]=h_{\xi+1}(\alpha, \beta[\varphi])$
 
 ### Other
 
 $\forall n , \psi_0>n$
 $\alpha ? \beta \Rightarrow \psi_\alpha?\psi_\beta$
-
 $\exist \alpha \exist \beta , h_\alpha(\xi_0, \beta) = \xi_1 \land \beta \ge 2 \Rightarrow \xi_0 < \xi_1$
-
