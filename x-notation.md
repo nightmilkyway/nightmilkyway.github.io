@@ -43,7 +43,8 @@ Superscript for braces - count of braces.
 14. $ X\{n[c + 1 ' \#] ' …(d) ' \# ' 1 ' e + 1 ' \#\} = X\{n[c + 1 ' \#] ' …(d) ' \# ' <…> ' e ' \#\} $
 15. $ X\{n[c + 1 ' \#] ' …(d) ' 1 ' 1 ' …(e + 1)\} = X\{n[c + 1 ' \#] ' …(d) ' n ' n ' …(e)\} $
 16. $ X\{n[c + 1 ' \#] ' …(d) ' [c + 1 ' \#]\} = X\{n[c + 1 ' \#] ' …(d) ' [c ' \#] ' [c ' \#] ' …\} $
-17. $ X\{n[1 ' 1]\} = X\{n[n]\} $
+17. $ X\{n[\# ' 1]\} = X\{n[\#]\} $
+17. $ X\{n[1 ' 2]\} = X\{n[n]\} $
 18. $ X\{n[\# ' 1 ' c + 1 ' \#]\} = X\{n[\# ' <…> ' c ' \#]\} $
 19. $ X\{n[1 ' 1 ' …(c + 1)]\} = X\{n[n ' n ' …(c)]\} $
 
@@ -77,10 +78,11 @@ Calculation order: from external to internal chains.
 
 1. $ X\{n[1 \backslash_2 1]\} = X\{n[[<…>] \backslash [<…>] \backslash …]\} $
 2. $ X\{n[1 \backslash_{s + 1} 1]\} = X\{n[[<…>] \backslash_s [<…>] \backslash_s …]\} $
-3. $ X\{n[1 \backslash_{1 ' 1} 1]\} = X\{n[1 \backslash_n 1]\} $
+3. $ X\{n[1 \backslash_{1 ' 2} 1]\} = X\{n[1 \backslash_n 1]\} $
 4. $ X\{n[1 \backslash_{1 → 1} 1]\} = X\{n[1 \backslash_{<…>} 1]\} $
 5. $ X\{n[1 \backslash_{1 → c + 1} 1]\} = X\{n[1 \backslash_{<…> → c} 1]\} $
 6. $ X\{n[1 \backslash_{\# → 1 → c + 1 → \#} 1]\} = X\{n[1 \backslash_{\# → <…> → c → \#} 1]\} $
 7. $ X\{n[1 \backslash_{1 →_2 1} 1]\} = X\{n[1 \backslash_{n → n → n → …} 1]\} $
 8. $ X\{n[1 \backslash_{1 →_{c + 1} 1} 1]\} = X\{n[1 \backslash_{n →_c n →_c n →_c …} 1]\} $
+
 9. $ X\{n[1 \backslash_{1 →_{1 → 1} 1} 1]\} = X\{n[1 \backslash_{1 →_{<…>} 1} 1]\} $
