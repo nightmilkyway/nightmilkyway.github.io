@@ -46,6 +46,9 @@ Superscript for braces - count of braces.
 17. $ X^{HD}\{n[1 ' 2]\} = X\{n[n]\} $
 18. $ X^{HD}\{n[\#_{min} ' 1 ' c + 1 ' \#]\} = X\{n[\#_{min} ' <…> ' c ' \#]\} $
 19. $ X^{HD}\{n[1 ' 1 ' …(c) ' 2]\} = X\{n[n ' n ' …(c)]\} $
+20. $ X^{HD}\{n[[1]]\} = X\{n[n ' n ' …]\} $
+21. $ X^{HD}\{n[[[1]]]\} = X\{n[[n ' n ' …]]\} $
+22. $ X^{HD}\{n[[[[1]]]]\} = X\{n[[[n ' n ' …]]]\} $
 
 ## Hash Chain Collapse Function
 
@@ -92,6 +95,7 @@ Superscript for braces - count of braces.
 
 
 And etc.
+
 
 
 
