@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>XSpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="HyperstarAX">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async=""></script>
+</head>
+
+<body>
+    <header>
+        <h1>XSpace</h1>
+        <a href="index.html"><img src="images/icon.png" alt="icon.png" class="main-logo"></a>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="changelogs.html">Changelogs</a></li>
+                <li>
+                    <details>
+                        <summary>Notations</summary>
+                        <ul>
+                            <li><a href="array-notation-1.html">Array Notation v1.0</a></li>
+                            <li><a href="x-notation.html">X-Notation</a></li>
+                            <li><a href="hard-x-notation.html">Hard X-Notation</a></li>
+                            <li><a href="hyperindex.html">Hyperindex Notation</a></li>
+                            <li><a href="gps-notation.html">GPS Notation</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Articles</summary>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section>
+            <article>
+                <h2>Hyperstar GPS Notation</h2>
+                <p>Letter-based recursive ordinal notation.</p>
+                <p>Current Extensions</p>
+                <ul>
+                    <li>GPS Notation</li>
+                    <li>GPSX Notation</li>
+                </ul>
+            </article>
+            <article>
+                <h3>TAD</h3>
+                <ul>
+                    <li>% denotes the remaining expression (can be null)</li>
+                    <li>[] denotes power of the expression</li>
+                    <li>greek letters denote ordinals</li>
+                    <li>\(P(\%,0)=g\%\)</li>
+                    <li>\(P(\%,\nu+1)=P(p\%,\nu)\)</li>
+                    <li>\(P(\%,\nu)=sup_{\lambda\lt\nu}P(p\%,\lambda)\), only if ν limit ordinal</li>
+                </ul>
+            </article>
+            <article>
+                <h3>GPS Notation</h3>
+                <ol>
+                    <li>\(\% = \%[0]\)</li>
+                    <li>\(\varnothing[\nu] = \nu\)</li>
+                    <li>\((\%[\nu])[\mu] = \%[\nu+\mu]\)</li>
+                    <li>\(g\%[\nu] = \%[\nu+1]\)</li>
+                    <li>\(p\%[0] = \%\)</li>
+                    <li>\(p\%[\nu+1] = p(\%[\omega])[\nu]\)</li>
+                    <li>\(p\%[\nu] = sup_{\lambda\lt\nu}p\%[\lambda]\), only if ν limit ordinal</li>
+                    <li>\(s\%[0]=\%\)</li>
+                    <li>\(s\%[\nu+1] = sP(\%,\omega)[\nu]\)</li>
+                    <li>\(s\%[\nu] = sup_{\lambda\lt\nu}s\%[\lambda]\), only if ν limit ordinal</li>
+                </ol>
+            </article>
+            <article>
+                <h3>GPSX Notation</h3>
+                <ol>
+                    <li>\(X_0(\%,0) = g\%\)</li>
+                    <li>\(X_0(\%,\nu+1) = X_0(p\%,\nu)\)</li>
+                    <li>\(X_0(\%,\nu) = sup_{\lambda\lt\nu}X_0(\%,\lambda)\), only if ν limit ordinal</li>
+                    <li>\(X_{\mu+1}(\%,0) = g\%\)</li>
+                    <li>\(X_{\mu+1}(\%,\nu+1) = X_{\mu+1}(x_{\mu}\%, \nu)\)</li>
+                    <li>\(X_{\mu+1}(\%,\nu) = sup_{\lambda\lt\nu}X_{\mu+1}(\%,\lambda)\), only if ν limit ordinal</li>
+                    <li>\(X_{\mu}(\%,0) = g\%\)</li>
+                    <li>\(X_{\mu}(\%,\nu+1) = sup_{\lambda\lt\mu}X_{\lambda}(\%,\nu+1)\), only if μ limit ordinal</li>
+                    <li>\(X_{\mu}(\%,\nu) = sup_{\lambda\lt\mu}X_{\lambda}(\%,\nu)\), only if μ limit ordinal</li>
+                    
+                    <li>\(x_0\%[0]=\%\)</li>
+                    <li>\(x_0\%[\nu+1] = x_0X_0(\%,\omega)[\nu]\)</li>
+                    <li>\(x_0\%[\nu] = sup_{\lambda\lt\nu}x_0\%[\lambda]\), only if ν limit ordinal</li>
+                    <li>\(x_{\mu+1}\%[0]=\%\)</li>
+                    <li>\(x_{\mu+1}\%[\nu+1] = x_{\mu+1}X_{\mu+1}(\%,\omega)[\nu]\)</li>
+                    <li>\(x_{\mu+1}\%[\nu] = sup_{\lambda\lt\nu}x_{\mu+1}\%[\lambda]\), only if ν limit ordinal</li>
+                    <li>\(x_{\mu}\%[0]=\%\)</li>
+                    <li>\(x_{\mu}\%[\nu+1] = x_{\mu}X_{\mu}(\%,\omega)[\nu]\)</li>
+                    <li>\(x_{\mu}\%[\nu] = sup_{\lambda\lt\mu}x_{\lambda}\%[\nu]\), only if μ limit ordinal</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

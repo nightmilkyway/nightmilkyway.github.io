@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>XSpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="HyperstarAX">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async=""></script>
+</head>
+
+<body>
+    <header>
+        <h1>XSpace</h1>
+        <a href="index.html"><img src="images/icon.png" alt="icon.png" class="main-logo"></a>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="changelogs.html">Changelogs</a></li>
+                <li>
+                    <details>
+                        <summary>Notations</summary>
+                        <ul>
+                            <li><a href="array-notation-1.html">Array Notation v1.0</a></li>
+                            <li><a href="x-notation.html">X-Notation</a></li>
+                            <li><a href="hard-x-notation.html">Hard X-Notation</a></li>
+                            <li><a href="hyperindex.html">Hyperindex Notation</a></li>
+                            <li><a href="gps-notation.html">GPS Notation</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Articles</summary>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section>
+            <article>
+                <h2>Hyperstar X-Notation</h2>
+                <p>Complexed and very powerful notation with an unimaginable growth speed.</p>
+                <p>Current Extensions</p>
+                <ul>
+                    <li>X-Notation</li>
+                    <li>Extended X-Notation</li>
+                    <li>Superextended X-Notation</li>
+                    <li>Hyperextended X-Notation</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Important</h3>
+                <p>The notation was intended as an experiment in which I would decide which way to go next.</p>
+                <p>This notation will not receive any further updates, only possible definition corrections.</p>
+                <p>If you want see new version of this notation, see <a href="hard-x-notation.html">Hard HSXN</a>.</p>
+                <p>I could update this notation, but decided to keep the old definition for the future.</p>
+            </article>
+            <article>
+                <h3>TAD</h3>
+                <ul>
+                    <li>Iterator - a chain of elements or other iterators (denoted as [...])</li>
+                    <li>Element - positive natural number</li>
+                    <li>Chain - a set of iterators and elements</li>
+                    <li>Base - first element</li>
+                    <li>Recursion - repeating of an array 'base' times. '&lt;...&gt;'</li>
+                    <li>Iteration - repeating of elements of array 'base' times. ''...'</li>
+                    <li>...(c) - repeating of elements of array 'c' times.</li>
+                    <li># - a part of a chain that does not transformed.</li>
+                </ul>
+                <p>All rules from previous array types is applicable to arrays of follow types, which contain iterators of previous type.</p>
+                <p>Superscript for braces - count of braces.</p>
+                <p>Analysis of this notation you can see <a href="analysis/hsxn-analysis.html">here</a>.</p>
+            </article>
+            <article>
+                <h3>X-Notation</h3>
+                <ol>
+                    <li>\(X\{n\}=n+1\)</li>
+                    <li>\(X\{\#'1\}=X\{\#\}\)</li>
+                    <li>\(X\{n'c+1\}=X\{<\dots>, c\}\)</li>
+                    <li>\(X\{\#_{min}'1'c+1'\#\}=X\{\#_{min}'<\dots>'c'\#\}\)</li>
+                    <li>\(X\{n[1]\}=X\{n'n'n\dots\}\)</li>
+                    <li>\(X\{n[1]'\dots(d)'1\}=X\{n[1]'\dots(d)\}\)</li>
+                    <li>\(X\{n[1]'\dots(d)'2\}=X\{n'n'n\dots[1]'\dots(d)\}\)</li>
+                    <li>\(X\{n[1]'\dots(d)'c+1\}=X\{n'n'n\dots[1]'\dots(d)'c\}\)</li>
+                    <li>\(X\{n[1]'\dots(d)'\#_{min}'1'c+1'\#\}=X\{n[1]'\dots(d)'\#_{min}'<\dots>'c'\#\}\)</li>
+                    <li>\(X\{n[1]'\dots(d)'1'1\dots(c)'2\}=X\{n[1]'\dots(d)'n'n\dots(c)\}\)</li>
+                    <li>\(X\{n[1]'\dots(d)'[1]\}=X\{n[1]'\dots(d)'n'n\dots\}\)</li>
+                    <li>\(X\{n[c+1'\#]\}=X\{n[c'\#]'[c'\#]'[c'\#]'\dots\}\)</li>
+                    <li>\(X\{n[c+1'\#]'\dots(d)'1\}=X\{n[c+1'\#]'\dots(d)\}\)</li>
+                    <li>\(X\{n[c+1'\#]'\dots(d)'2\}=X\{n[c'\#]n[c'\#]n\dots[c+1'\#]'\dots\}\)</li>
+                    <li>\(X\{n[c+1'\#]'\dots(d)'e+1\}=X\{n[c'\#]'[c'\#]\dots[c+1'\#]'\dots(d)'e\}\)</li>
+                    <li>\(X\{n[c+1'\#]'\dots(d)'\#_{min}'1'e+1'\#\}=X\{n[c+1'\#]'\dots(d)'\#_{min}'<\dots>'e'\#\}\)</li>
+                    <li>\(X\{n[c+1'\#]'\dots(d)'1'1\dots(e)'2\}=X\{n[c+1'\#]'\dots(d)'n'n\dots(e)\}\)</li>
+                    <li>\(X\{n[c+1'\#]'\dots(d)'[e+1'\#]\}=X\{n[c+1'\#]'\dots(d)'[e'\#]'[e'\#]\dots\}\)</li>
+                    <li>\(X\{n[\#'1]\}=X\{n[\#]\}\)</li>
+                    <li>\(X\{n[1'2]\}=X\{n[n]\}\)</li>
+                    <li>\(X\{n[\#_{min}'1'c+1'\#]\}=X\{n[\#_{min}'<\dots>'c'\#]\}\)</li>
+                    <li>\(X\{n[1'1'\dots(c)'2]\}=X\{n[n'n'\dots(c)]\}\)</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Extended X-Notation</h3>
+                <ol>
+                    <li>\(X\{n[[1]]\}=X\{n[n'n'\dots]\}\)</li>
+                    <li>\(X\{n[[[1]]]\}=X\{n[[n'n'\dots]]\}\)</li>
+                    <li>\(X\{n[[[[1]]]]\}=X\{n[[[n'n'\dots]]]\}\)</li>
+                </ol>
+                <p>And etc. Note: all rules from X-Notation applicable inside iterator. Iterators are independent objects, and expansion X-Notation rules 6-19 working inside other iterators. like: X{n[[[1'1]]]} = X{n[[[n]]]}</p>
+                <p>Calculation order: from external to internal chains.</p>
+                <p>...[[1]]... = ...[1[1]]... .</p>
+                <p>Common recursive rule: \(X\{n[^c[1]]^c\}=X\{n[^cn'n'\dots]^c\}\)</p>
+            </article>
+            <article>
+                <h3>Superextended X-Notation</h3>
+                <p>Note: in rule 3 of SEHSXN, ... used for a chain with repeating iterators.</p>
+                <ol>
+                    <li>\(X\{n[1\backslash1]\}=X\{n{[1]}^n\}\)</li>
+                    <li>\(X\{n[\#_{min}\backslash1\backslash c+1\backslash\#]\}=X\{n[\#_{min}\backslash[<\dots>]\backslash c\backslash\#]\}\)</li>
+                    <li>\(X\{n[1\backslash1\backslash\dots(c+1)]\}=X\{n[[<\dots>]\backslash[<\dots>]\backslash\dots(c)]\}\)</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Hyperextended X-Notation</h3>
+                <p>Note: in all rules of HEHSXN, ... used for a chain with repeating iterators.</p>
+                <ol>
+                    <li>\(X\{n[1\backslash_21]\}=X\{n[[<\dots>]\backslash[<\dots>]\backslash\dots]\}\)</li>
+                    <li>\(X\{n[1\backslash_{s+1}1]\}=X\{n[[<\dots>]\backslash_s[<\dots>]\backslash_s\dots]\}\)</li>
+                    <li>\(X\{n[1\backslash_{1'2}1]\}=X\{n[1\backslash_n1]\}\)</li>
+                    <li>\(X\{n[1\backslash_{1\rightarrow1}1]\}=X\{n[1\backslash_{<\dots>}1]\}\)</li>
+                    <li>\(X\{n[1\backslash_{1\rightarrow c+1}1]\}=X\{n[1\backslash_{<\dots>\rightarrow c}1]\}\)</li>
+                    <li>\(X\{n[1\backslash_{\#_{min}\rightarrow1\rightarrow c+1\rightarrow\#}1]\}=X\{n[1\backslash_{\#_{min}\rightarrow<\dots>\rightarrow c\rightarrow\#}1]\}\)</li>
+                    <li>\(X\{n[1\backslash_{1\rightarrow_21}1]\}=X\{n[1\backslash_{n\rightarrow n\rightarrow n\rightarrow\dots}1]\}\)</li>
+                    <li>\(X\{n[1\backslash_{1\rightarrow_{c+1}1}1]\}=X\{n[1\backslash_{n\rightarrow_c n\rightarrow_c n\rightarrow_c\dots}1]\}\)</li>
+                    <li>\(X\{n[1\backslash_{1\rightarrow_{1\rightarrow1}1}1]\}=X\{n[1\backslash_{1\rightarrow_{<\dots>}1}1]\}\)</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>XSpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="HyperstarAX">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async=""></script>
+</head>
+
+<body>
+    <header>
+        <h1>XSpace</h1>
+        <a href="index.html"><img src="images/icon.png" alt="icon.png" class="main-logo"></a>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="changelogs.html">Changelogs</a></li>
+                <li>
+                    <details>
+                        <summary>Notations</summary>
+                        <ul>
+                            <li><a href="array-notation-1.html">Array Notation v1.0</a></li>
+                            <li><a href="x-notation.html">X-Notation</a></li>
+                            <li><a href="hard-x-notation.html">Hard X-Notation</a></li>
+                            <li><a href="hyperindex.html">Hyperindex Notation</a></li>
+                            <li><a href="gps-notation.html">GPS Notation</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Articles</summary>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section>
+            <article>
+                <h2>Hyperstar Hyperindex Notation</h2>
+                <p>Hierarchial notation, replacement for FGH.</p>
+            </article>
+            <article>
+                <h3>Hyperindex Notation</h3>
+                <ol>
+                    <li><math>
+                        <mrow>
+                            <msub>
+                                <mi>I</mi>
+                                <mrow>
+                                    <mn>0</mn>
+                                </mrow>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>n</mi>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <msub>
+                                <mi>I</mi>
+                                <mrow>
+                                    <mi>&mu;</mi>
+                                    <mo>+</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <msubsup>
+                                <mi>I</mi>
+                                <mrow>
+                                    <mi>&mu;</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>n</mi>
+                                </mrow>
+                            </msubsup>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <msub>
+                                <mi>I</mi>
+                                <mrow>
+                                    <mi>&mu;</mi>
+                                </mrow>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <msub>
+                                <mi>I</mi>
+                                <mrow>
+                                    <mi>&mu;</mi>
+                                    <mo fence="true" form="prefix">[</mo>
+                                    <mi>n</mi>
+                                    <mo fence="true" form="postfix">]</mo>
+                                </mrow>
+                            </msub>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
+            </article>
+            <article>
+                <h3>Object Expansion Rules</h3>
+                <ol>
+                    <li><math>
+                        <mrow>
+                            <mi>m</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>m</mi>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>@</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mi>n</mi>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>#</mi>
+                            <mo separator="true">;</mo>
+                            <mi>@</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>0</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>3</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <mi>&ctdot;</mi>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mi>k</mi>
+                            </msub>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>0</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>3</mn>
+                            </msub>
+                            <mo>+</mo>
+                            <mi>&ctdot;</mi>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mi>k</mi>
+                            </msub>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mtext>, only if:</mtext>
+                        <mrow>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>0</mn>
+                            </msub>
+                            <mo>&gt;</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>1</mn>
+                            </msub>
+                            <mo>&gt;</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>2</mn>
+                            </msub>
+                            <mo>&gt;</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mn>3</mn>
+                            </msub>
+                            <mo>&gt;</mo>
+                            <mi>&ctdot;</mi>
+                            <mo>&gt;</mo>
+                            <msub>
+                                <mi>&xi;</mi>
+                                <mi>k</mi>
+                            </msub>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>&xi;</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>&xi;</mi>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>+</mo>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>&xi;</mi>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>+</mo>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>&xi;</mi>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo>+</mo>
+                            <mi>&ctdot;</mi>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>@</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo separator="true">;</mo>
+                            <mn>1</mn>
+                            <mo separator="true">;</mo>
+                            <mi>&xi;</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>@</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo separator="true">;</mo>
+                            <mo fence="true" form="prefix">&lt;</mo>
+                            <mi>&sol;</mi>
+                            <mo fence="true" form="postfix">&gt;</mo>
+                            <mo separator="true">;</mo>
+                            <mi>&xi;</mi>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                    </math></li>
+                    <li><math>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>@</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo separator="true">;</mo>
+                            <mi>&xi;</mi>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo fence="true" form="prefix">(</mo>
+                            <mi>@</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mn>1</mn>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo separator="true">;</mo>
+                            <mi>&xi;</mi>
+                            <mo fence="true" form="prefix">[</mo>
+                            <mi>n</mi>
+                            <mo fence="true" form="postfix">]</mo>
+                            <mo separator="true">;</mo>
+                            <mi>#</mi>
+                            <mo fence="true" form="postfix">)</mo>
+                        </mrow>
+                    </math></li>
+                </ol>
+                <p>Expanded forms of object - any sequence of objects separated by '+' which can be obtained by using object expansion rules</p>
+                <ul>
+                    <li>If objects &alpha; and &beta; are the same, &alpha; = &beta;.</li>
+                    <li>If object &alpha; contain object &beta; in expanded form, &alpha; &gt; &beta;.</li>
+                    <li>If object &beta; contain object &alpha; in expanded form, &alpha; &lt; &beta;.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
