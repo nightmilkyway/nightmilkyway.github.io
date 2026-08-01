@@ -92,6 +92,11 @@ aside a:hover, a:focus {
     color: #ffffff;
 }
 
+.main-logo {
+    height: 50px;
+    width: 50px;
+}
+
 main {
     grid-area: main;
     padding: 16px;
@@ -142,12 +147,14 @@ h1 {
 h2 {
     font-size: 48px;
     font-weight: bold;
+    color: #ffffff;
     margin: 0px;
 }
 
 h3 {
     font-size: 30px;
     font-weight: bold;
+    color: #ffffff;
     margin: 0px;
 }
 
@@ -219,4 +226,140 @@ th, td{
 
 th {
     font-size: 18px;
+}
+
+.text-warning {
+    color: #e50000;
+}
+
+.text-note {
+    color: #0000e5;
+}
+
+.text-gradient1 {
+    color: #57C7B8;
+    font-weight: bold;
+    display: inline;
+    
+    background: linear-gradient(90deg, rgba(87, 255, 255, 1) 0%, rgba(255, 255, 87, 1) 50%, rgba(255, 87, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient2 {
+    color: #57C7B8;
+    font-weight: bold;
+    display: inline;
+    
+    background: linear-gradient(90deg, rgba(2, 0, 255, 1) 0%, rgba(0, 255, 255, 1) 50%, rgba(2, 0, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient3 {
+    color: #57C7B8;
+    font-weight: bold;
+    display: inline;
+    
+    background: linear-gradient(90deg, rgba(2, 0, 255, 1) 0%, rgba(255, 0, 255, 1) 50%, rgba(2, 0, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient4 {
+    color: #57C7B8;
+    font-weight: bold;
+    display: inline;
+    
+    background: linear-gradient(90deg, rgba(255, 0, 255, 1) 0%, rgba(127, 127, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient5 {
+    color: #57C7B8;
+    font-weight: bold;
+    display: inline;
+    
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 127, 0, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-rainbow {
+    color: #ff0000;
+    font-weight: bold;
+    animation: rainbowanim 3.5s infinite alternate;
+}
+
+.text-blueglow {
+    text-shadow: 0 0 10px #0000ff;
+    animation: blueglowanim 1s infinite alternate;
+}
+
+.text-rainbowglow {
+    text-shadow: 0 0 10px #ff0000;
+    animation: rainbowglowanim 3.5s infinite alternate;
+}
+
+@keyframes rainbowglowanim {
+    0% {
+        text-shadow: 0 0 10px #ff0000, 0 0 10px #ff0000, 0 0 10px #ff0000, 0 0 10px #ff0000;
+    }
+    16% {
+        text-shadow: 0 0 10px #ff7f00, 0 0 10px #ff7f00, 0 0 10px #ff7f00, 0 0 10px #ff7f00;
+    }
+    33% {
+        text-shadow: 0 0 10px #ffff00, 0 0 10px #ffff00, 0 0 10px #ffff00, 0 0 10px #ffff00;
+    }
+    50% {
+        text-shadow: 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00;
+    }
+    66% {
+        text-shadow: 0 0 10px #00ffff, 0 0 10px #00ffff, 0 0 10px #00ffff, 0 0 10px #00ffff;
+    }
+    83% {
+        text-shadow: 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff;
+    }
+    100% {
+        text-shadow: 0 0 10px #7f00ff, 0 0 10px #7f00ff, 0 0 10px #7f00ff, 0 0 10px #7f00ff;
+    }
+}
+
+@keyframes blueglowanim {
+    0% {
+        text-shadow: 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
+    }
+    100% {
+        text-shadow: 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff;
+    }
+}
+
+@keyframes rainbowanim {
+    0% {
+        color: #ff0000;
+    }
+    16% {
+        color: #ff7f00;
+    }
+    33% {
+        color: #ffff00;
+    }
+    50% {
+        color: #00ff00;
+    }
+    66% {
+        color: #00ffff;
+    }
+    83% {
+        color: #0000ff;
+    }
+    100% {
+        color: #7f00ff;
+    }
 }
